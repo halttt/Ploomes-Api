@@ -44,7 +44,7 @@ Aqui estão as principais funcionalidades que o sistema oferece:
 
 - ## EndPoints
 
-- Advogados
+### Advogados
 
 - **GET** /Advogados: Recupera a lista de advogados cadastrados.
 - **POST** /Advogados: Cadastra um novo advogado.
@@ -52,7 +52,7 @@ Aqui estão as principais funcionalidades que o sistema oferece:
 - **PUT** /Advogados/{id}: Atualiza as informações de um advogado existente.
 - **DELETE** /Advogados/{id}: Remove um advogado do sistema.
 
-### - Processos
+### Processos
 
 - **GET** /Processos: Recupera a lista de processos cadastrados.
 - **POST** /Processos: Cadastra um novo processo.
@@ -60,7 +60,7 @@ Aqui estão as principais funcionalidades que o sistema oferece:
 - **PUT** /Processos/{id}: Atualiza as informações de um processo existente.
 - **DELETE** /Processos/{id}: Remove um processo do sistema.
  
-### - Usuários
+### Usuários
 
 - **POST** /Usuarios/Cadastro: Cadastra um novo usuário.
 - **POST** /Usuarios/Login: Realiza o login de um usuário e retorna um token JWT.
