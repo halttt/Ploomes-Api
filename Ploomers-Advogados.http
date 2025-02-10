@@ -1,0 +1,6 @@
+@Ploomers_Advogados_HostAddress = http://localhost:5026
+
+GET {{Ploomers_Advogados_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

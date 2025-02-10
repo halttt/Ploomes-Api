@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ploomers-Advogados</name>
+    </assembly>
+    <members>
+        <member name="M:Ploomers_Advogados.Controllers.AdvogadoController.Cadastrar(Ploomers_Advogados.Data.Dtos.CreateAdvogadoDto)">
+            <summary>
+            Cria um novo advogado.
+            </summary>
+            <param name="dto">Os dados necessários para criar um advogado.</param>
+            <returns>O advogado recém-criado.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.AdvogadoController.ObterPorId(System.Int32)">
+            <summary>
+            Obtém os detalhes de um advogado pelo seu ID.
+            </summary>
+            <param name="id">O ID do advogado.</param>
+            <returns>Detalhes do advogado.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.AdvogadoController.ObterTodos">
+            <summary>
+            Obtém todos os advogados cadastrados.
+            </summary>
+            <returns>Uma lista de todos os advogados cadastrados.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.AdvogadoController.AtualizarParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Ploomers_Advogados.Data.Dtos.UpdateAdvogadoDto})">
+            <summary>
+            Atualiza parcialmente os dados de um advogado.
+            </summary>
+            <param name="id">O ID do advogado a ser atualizado.</param>
+            <param name="patch">O documento JSON Patch contendo as alterações.</param>
+            <returns>Resultado da atualização.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.AdvogadoController.Deletar(System.Int32)">
+            <summary>
+            Deleta um advogado pelo seu ID.
+            </summary>
+            <param name="id">O ID do advogado a ser deletado.</param>
+            <returns>Resultado da exclusão.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.ProcessoController.Cadastrar(Ploomers_Advogados.Data.Dtos.CreateProcessoDto)">
+            <summary>
+            Cria um novo processo.
+            </summary>
+            <param name="dto">Os dados necessários para criar um processo.</param>
+            <returns>O processo recém-criado.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.ProcessoController.ObterPorId(System.Int32)">
+            <summary>
+            Obtém os detalhes de um processo pelo seu ID.
+            </summary>
+            <param name="id">O ID do processo.</param>
+            <returns>Detalhes do processo.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.ProcessoController.ObterTodos">
+            <summary>
+            Obtém todos os processos cadastrados.
+            </summary>
+            <returns>Uma lista de todos os processos cadastrados.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.ProcessoController.AtualizarParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Ploomers_Advogados.Data.Dtos.UpdateProcessoDto})">
+            <summary>
+            Atualiza parcialmente os dados de um processo.
+            </summary>
+            <param name="id">O ID do processo a ser atualizado.</param>
+            <param name="patch">O documento JSON Patch contendo as alterações.</param>
+            <returns>Resultado da atualização.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.ProcessoController.Deletar(System.Int32)">
+            <summary>
+            Deleta um processo pelo seu ID.
+            </summary>
+            <param name="id">O ID do processo a ser deletado.</param>
+            <returns>Resultado da exclusão.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.UsuarioController.CadastrarUsuario(Ploomers_Advogados.Data.Dtos.CreateUsuarioDto)">
+            <summary>
+            Cadastra um novo usuário.
+            </summary>
+            <param name="createUsuarioDto">Os dados necessários para cadastrar um novo usuário.</param>
+            <returns>Mensagem de sucesso.</returns>
+        </member>
+        <member name="M:Ploomers_Advogados.Controllers.UsuarioController.Login(Ploomers_Advogados.Data.Dtos.LoginUsuarioDto)">
+            <summary>
+            Realiza o login de um usuário e retorna um token JWT.
+            </summary>
+            <param name="loginUsuarioDto">Os dados de login do usuário.</param>
+            <returns>O token JWT do usuário.</returns>
+        </member>
+        <member name="T:Ploomers_Advogados.Migrations.Advogado">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Advogado.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Advogado.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Advogado.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ploomers_Advogados.Migrations.AtualizartabelaAdvogado">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.AtualizartabelaAdvogado.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.AtualizartabelaAdvogado.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.AtualizartabelaAdvogado.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ploomers_Advogados.Migrations.ProcessoeAdvogado">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.ProcessoeAdvogado.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.ProcessoeAdvogado.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.ProcessoeAdvogado.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ploomers_Advogados.Migrations.Atualizacaotabelaadvogado">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Atualizacaotabelaadvogado.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Atualizacaotabelaadvogado.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.Atualizacaotabelaadvogado.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ploomers_Advogados.Migrations.UsuarioDb.Usuario">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.UsuarioDb.Usuario.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.UsuarioDb.Usuario.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ploomers_Advogados.Migrations.UsuarioDb.Usuario.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
