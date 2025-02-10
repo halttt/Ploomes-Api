@@ -14,6 +14,7 @@ Criação de usuário: Envie uma requisição POST para o endpoint de cadastro c
     "Password": "Senha123!",
     "RePassword": "Senha123!"
   }
+  
 Username: deve ser único.
 Password e RePassword devem ser iguais e atender aos critérios de segurança.
 
