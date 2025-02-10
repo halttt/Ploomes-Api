@@ -9,11 +9,11 @@ Todas as chamadas devem ser validadas com o Token JWT, com exceção das rotas d
 #### Criação de usuário:
 Criação de usuário: Envie uma requisição POST para o endpoint de cadastro com o seguinte corpo:
 
-  {
+    { 
     "Username": "Teste",
     "Password": "Senha123!",
     "RePassword": "Senha123!"
-  }
+    }
   
 Username: deve ser único.
 Password e RePassword devem ser iguais e atender aos critérios de segurança.
