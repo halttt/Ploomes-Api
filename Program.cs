@@ -13,14 +13,14 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurar a string de conexão
-var connectionString = builder.Configuration.GetConnectionString("AdvogadoConnection");
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Registrar o DbContext com a string de conexão
+// Registrar o DbContext com a string de conexão para SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseLazyLoadingProxies().UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseLazyLoadingProxies().UseSqlServer(connectionString));
 
 builder.Services.AddDbContext<UsuarioDbContext>(options =>
-    options.UseLazyLoadingProxies().UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseLazyLoadingProxies().UseSqlServer(connectionString));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -55,7 +55,6 @@ builder.Services.AddIdentity<Usuario, IdentityRole>()
     .AddEntityFrameworkStores<UsuarioDbContext>()
     .AddDefaultTokenProviders();
 
-
 // Registrar repositórios e serviços
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<IAdvogadoRepository, AdvogadoRepository>();
@@ -63,8 +62,6 @@ builder.Services.AddScoped<IAdvogadoService, AdvogadoService>();
 builder.Services.AddScoped<IProcessoRepository, ProcessoRepository>();
 builder.Services.AddScoped<IProcessoService, ProcessoService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
-
-
 
 // Adicionar serviços de controle e Swagger
 builder.Services.AddControllers();

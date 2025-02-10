@@ -9,6 +9,7 @@ namespace Ploomers_Advogados.Data
 
         public DbSet<Advogado> Advogados { get; set; }
         public DbSet<Processo> Processos { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -19,6 +20,11 @@ namespace Ploomers_Advogados.Data
                 .WithMany(advogado => advogado.Processos)
                 .HasForeignKey(processo => processo.AdvogadoId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Configuração explícita do tipo de dado para SQL Server
+            modelBuilder.Entity<Advogado>()
+                .Property(a => a.Nome)
+                .HasColumnType("nvarchar(max)");
         }
     }
 }

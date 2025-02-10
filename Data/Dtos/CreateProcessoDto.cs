@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Ploomers_Advogados.Migrations;
 
 namespace Ploomers_Advogados.Data.Dtos
 {

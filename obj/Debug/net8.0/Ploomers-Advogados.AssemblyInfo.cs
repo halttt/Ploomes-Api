@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ploomers-Advogados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26ce02ca44b5ec01425529d746f41e510a29eb3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ploomers-Advogados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ploomers-Advogados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

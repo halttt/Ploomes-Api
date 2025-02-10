@@ -1,5 +1,4 @@
-﻿using Ploomers_Advogados.Migrations;
-
+﻿
 namespace Ploomers_Advogados.Data.Dtos
 {
     public class ReadProcessoDto
