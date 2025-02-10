@@ -1,10 +1,10 @@
-##API de Gestão de Advogados e Processos
+## API de Gestão de Advogados e Processos
 Esta aplicação permite realizar operações sobre advogados e processos, e oferece funcionalidades de cadastro e autenticação de usuários. A segurança da API é garantida com a utilização de JWT (JSON Web Tokens).
 
-##IMPORTANTE
+## IMPORTANTE
 Todas as chamadas devem ser validadas com o Token JWT, com exceção das rotas de Cadastro e Login.
 
-###Como usar a aplicação:
+### Como usar a aplicação:
 
 #### Criação de usuário:
 Criação de usuário: Envie uma requisição POST para o endpoint de cadastro com o seguinte corpo:
