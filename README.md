@@ -21,11 +21,13 @@ Password e RePassword devem ser iguais e atender aos critérios de segurança.
 Se o Username já estiver em uso ou as senhas forem inválidas, a API retornará um erro.
 
 Login: Após criar o usuário, faça login com o seguinte corpo de requisição:
+
     {
     "Username": "Teste",
     "Password": "Senha123!"
     }
 
+  
 Após um login bem-sucedido, você receberá um Token JWT. Copie esse token e cole-o no campo de Authorization do Swagger, utilizando o formato:
 Bearer <seu_token_jwt>
 
