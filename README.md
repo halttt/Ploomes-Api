@@ -7,7 +7,7 @@ Todas as chamadas devem ser validadas com o Token JWT, com exceção das rotas d
 ### Como usar a aplicação:
 
 #### Criação de usuário:
-Criação de usuário: Envie uma requisição POST para o endpoint de cadastro com o seguinte corpo:
+Envie uma requisição POST para o endpoint de cadastro com o seguinte corpo:
 
     { 
     "Username": "Teste",
@@ -15,12 +15,12 @@ Criação de usuário: Envie uma requisição POST para o endpoint de cadastro c
     "RePassword": "Senha123!"
     }
   
-Username: deve ser único.
+Username deve ser único.
 Password e RePassword devem ser iguais e atender aos critérios de segurança.
-
 Se o Username já estiver em uso ou as senhas forem inválidas, a API retornará um erro.
 
-Login: Após criar o usuário, faça login com o seguinte corpo de requisição:
+#### Login
+Após criar o usuário, faça login com o seguinte corpo de requisição:
 
     {
     "Username": "Teste",
@@ -41,6 +41,32 @@ Aqui estão as principais funcionalidades que o sistema oferece:
 - **Autenticação via JWT**: Todas as operações sensíveis da API são protegidas, exigindo um token válido para autenticação.
 - **Operações CRUD**: Realize operações de criação, leitura, atualização e exclusão de advogados, processos e usuários.
 - **Documentação Interativa**: A API possui uma documentação interativa gerada pelo **Swagger**, facilitando a exploração dos endpoints.
+
+- ## EndPoints
+
+- Advogados
+
+- **GET** /Advogados: Recupera a lista de advogados cadastrados.
+- **POST** /Advogados: Cadastra um novo advogado.
+- **GET** /Advogados/{id}: Recupera um advogado específico pelo ID.
+- **PUT** /Advogados/{id}: Atualiza as informações de um advogado existente.
+- **DELETE** /Advogados/{id}: Remove um advogado do sistema.
+
+### - Processos
+
+- **GET** /Processos: Recupera a lista de processos cadastrados.
+- **POST** /Processos: Cadastra um novo processo.
+- **GET** /Processos/{id}: Recupera um processo específico pelo ID.
+- **PUT** /Processos/{id}: Atualiza as informações de um processo existente.
+- **DELETE** /Processos/{id}: Remove um processo do sistema.
+ 
+### - Usuários
+
+- **POST** /Usuarios/Cadastro: Cadastra um novo usuário.
+- **POST** /Usuarios/Login: Realiza o login de um usuário e retorna um token JWT.
+- Para detalhes sobre os parâmetros de cada endpoint, exemplos de requisições e respostas, consulte a documentação interativa gerada pelo Swagger na sua aplicação.
+
+- Lembre-se de que todas as operações, exceto as de cadastro e login de usuários, requerem um token JWT válido para autenticação.
 
 ## Tecnologias Utilizadas
 
