@@ -3,6 +3,7 @@ Esta aplicação permite realizar operações sobre advogados e processos, e ofe
 
 ## IMPORTANTE
 Todas as chamadas devem ser validadas com o Token JWT, com exceção das rotas de Cadastro e Login.
+A senha deve ser ter um caractere especial, letra maiúscula e número (Exemplo: Senha123!)
 
 ### Como usar a aplicação:
 
